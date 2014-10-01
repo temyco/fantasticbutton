@@ -151,8 +151,6 @@ public class ButtonHandle {
      * @param textToShare text, which wold be shared.
      */
     private void authFacebookSsoAndShare(final String textToShare) {
-        Log.d(TAG, "fb auth...");
-        Log.d(TAG, "is sso: " + fbHandle.isSSOAvailable());
         fbHandle.sso(ACTIVITY_SSO);
 
         String url = "https://graph.facebook.com/me";
@@ -161,7 +159,6 @@ public class ButtonHandle {
                     @Override
                     public void callback(String url, JSONObject object, AjaxStatus status) {
                         if (object != null) {
-                            Log.d(TAG, "auth success: " + object.toString());
                             postOnFb(textToShare);
                         }
                     }
@@ -175,16 +172,11 @@ public class ButtonHandle {
      * @param textForShare text, which wold be shared.
      */
     private void postOnFb(String textForShare) {
-        Log.d(TAG, "fb posting...");
         String url = "https://graph.facebook.com/me/feed";
 
         AjaxCallback<JSONObject> cb = new AjaxCallback<JSONObject>() {
             @Override
-            public void callback(String url, JSONObject object, AjaxStatus status) {
-                if (object != null) {
-                    Log.d(TAG, "posting success: " + object.toString());
-                }
-            }
+            public void callback(String url, JSONObject object, AjaxStatus status) {}
         };
 
         Map<String, String> params = new HashMap<String, String>();
@@ -272,16 +264,13 @@ public class ButtonHandle {
             Toast.makeText(aq.getContext(), R.string.no_internet, Toast.LENGTH_LONG).show();
         } else {
             tweetToBeTweeted = textToShare;
-            Log.d(TAG, "share on twitter");
             Intent intent = getShareIntent("twitter", "sub", tweetToBeTweeted);
             if (intent != null) {
                 aq.getContext().startActivity(intent);
             } else {
                 if (!twitterHandle.authenticated()) {
-                    Log.d(TAG, "!authenticated");
                     authTwitter();
                 } else {
-                    Log.d(TAG, "authenticated");
                     new Thread(postTweetRunnable).start();
                 }
             }
@@ -327,7 +316,6 @@ public class ButtonHandle {
      * This method launch twitter authentication, and if it would be successfully it will share message.
      */
     private void authTwitter() {
-        Log.d(TAG, "twitter auth...");
         String url = "https://api.twitter.com/oauth/authorize";
         aq.auth(twitterHandle).progress(new ProgressBar(aq.getContext()))
                 .ajax(url, JSONArray.class, twitterCb);
@@ -336,9 +324,7 @@ public class ButtonHandle {
     private AjaxCallback<JSONArray> twitterCb = new AjaxCallback<JSONArray>() {
         @Override
         public void callback(String url, JSONArray object, AjaxStatus status) {
-            Log.d(TAG, "twitter callback");
             if (twitterHandle.authenticated()) {
-                Log.d(TAG, "twitter callback authenticated");
                 new Thread(postTweetRunnable).start();
             }
         }
@@ -348,7 +334,6 @@ public class ButtonHandle {
      * Method post tweet.
      */
     private void postTweet() {
-        Log.d(TAG, "twitter posting...");
         Twitter twitter = new TwitterFactory().getInstance();
         AccessToken accessToken = new AccessToken(twitterHandle.getToken(),
                 twitterHandle.getSecret());
@@ -358,7 +343,6 @@ public class ButtonHandle {
         Status status = null;
         try {
             status = twitter.updateStatus(tweetToBeTweeted);
-            Log.d(TAG, "status posted. " + status.getText());
         } catch (TwitterException e) {
             Log.e(TAG, Log.getStackTraceString(e));
         }
