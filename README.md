@@ -9,6 +9,8 @@ It provides a simple in use button that supports:
 - Google+ login and sharing
 - Rating the app directly on GooglePlay
 
+![btn_screenshot](https://www.dropbox.com/s/6c9zx3bi55zl6jb/fantastic_btn_1.png)
+
 # How to use?
 
 - Download fantastic_button_module
