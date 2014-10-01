@@ -8,8 +8,9 @@ It provides a simple in use button that supports:
 - Twitter login and sharing
 - Google+ login and sharing
 - Rating the app directly on GooglePlay
+- Nice unobtrusive button animation
 
-![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")    ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
+![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")      ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
 
 # How to use?
 
