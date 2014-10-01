@@ -1,4 +1,5 @@
-== FantasticButton Android library
+FantasticButton Android library
+=====
 
 FantasticButton is an apk-library for Android application projects.
 
