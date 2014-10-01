@@ -9,7 +9,10 @@ It provides a simple in use button that supports:
 - Google+ login and sharing
 - Rating the app directly on GooglePlay
 
+Button appearance
 ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")
+
+Sharing dialog
 ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
 
 # How to use?
