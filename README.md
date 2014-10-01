@@ -15,7 +15,7 @@ Screenshots from the test application(app module in this project)
 ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")&nbsp;&nbsp;&nbsp;&nbsp;![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
 
 ## Requirements
-- Android Studio
+- Android Studio with Gradle build system (if you're using Eclipse you should setup building settings yourself)
 - Minimum SDK version:
 	- if you want to use the button's animation - 14 (ICE_CREAM_SANDWICH)
 	- 11 (GINGERBREAD), in other case
