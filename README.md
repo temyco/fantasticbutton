@@ -66,3 +66,4 @@ the requestCode for Facebook SSO login is ``` ACTIVITY_SSO = 1000.```
         }
     }
 ```
+The full example is available in the app module of this project.
