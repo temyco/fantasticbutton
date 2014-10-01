@@ -1,0 +1,39 @@
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '20.0.0'
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.stepinmobile.fantasticbutton"
+        minSdkVersion 14
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+
+    productFlavors {
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/android-query-full.0.26.8.jar')
+    compile files('libs/twitter4j-core-4.0.2.jar')
+    compile files('libs/twitter4j-async-4.0.2.jar')
+    compile 'com.google.android.gms:play-services:5.+'
+}

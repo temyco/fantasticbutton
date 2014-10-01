@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FantasticButton</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_internet">Please check your internet connection</string>
+
+    <!-- SD Sharing Dialog -->
+    <string name="sd_fb">Facebook</string>
+    <string name="sd_twitter">Twitter</string>
+    <string name="sd_google">Google</string>
+    <string name="sd_google_play">Rate on GooglePlay</string>
+    <string name="sd_title">Share app with:</string>
+
+</resources>

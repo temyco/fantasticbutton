@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:background="#795548"
+                tools:context="com.stepinmobile.fantasticbutton.test.TestActivity">
+
+    <com.stepinmobile.fantasticbutton.view.FantasticButton
+        xmlns:custom="http://schemas.android.com/apk/res/stepinmobile.com.testbutton"
+        android:id="@+id/btn_fantastic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pink_heart_selector"
+        custom:is_animated="true"
+        custom:is_google_play_enabled="true"
+        custom:anim_delay_in_millis="5000" />
+
+    <com.stepinmobile.fantasticbutton.view.FantasticButton
+        xmlns:custom="http://schemas.android.com/apk/res/stepinmobile.com.testbutton"
+        android:id="@+id/btn_fantastic_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_heart_selector"
+        custom:is_animated="true"
+        custom:is_google_play_enabled="true"
+        custom:anim_delay_in_millis="5000"
+        android:layout_alignTop="@+id/btn_fantastic"
+        android:layout_toRightOf="@+id/btn_fantastic"
+        android:layout_toEndOf="@+id/btn_fantastic"/>
+
+    <com.stepinmobile.fantasticbutton.view.FantasticButton
+        xmlns:custom="http://schemas.android.com/apk/res/stepinmobile.com.testbutton"
+        android:id="@+id/btn_fantastic_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_heart_selector"
+        custom:is_animated="true"
+        custom:is_google_play_enabled="true"
+        custom:anim_delay_in_millis="5000"
+        android:layout_toEndOf="@+id/btn_fantastic_blue"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_fantastic_blue"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="THE COOLEST SHARE BUTTON EVER CREATED BY HUMANS"
+        android:id="@+id/textView"
+        android:textColor="#F48FB1"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

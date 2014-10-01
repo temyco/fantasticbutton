@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="FantasticButton">
+       <attr name="is_animated" format="boolean" />
+       <attr name="anim_delay_in_millis" format="integer" />
+       <attr name="is_google_play_enabled" format="boolean" />
+   </declare-styleable>
+</resources>
