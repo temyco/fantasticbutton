@@ -14,7 +14,13 @@ Screenshots from the test application(app module in this project)
 
 ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")&nbsp;&nbsp;&nbsp;&nbsp;![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
 
-# How to use?
+## Requirements
+- Android Studio
+- Minimum SDK version:
+	- if you want to use the button's animation - 14 (ICE_CREAM_SANDWICH)
+	- 11 (GINGERBREAD), in other case
+
+## How to use?
 
 - Download fantastic_button_module
 - Open your project in Android Studio and use File -> Import Module command
