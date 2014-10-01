@@ -55,6 +55,10 @@ provide ``` is_google_play_enabled="boolean" ``` attribute.
 - To finish the button's setup you should go to your Activity and add this code. Note that
 the requestCode for Facebook SSO login is ``` ACTIVITY_SSO = 1000.```
 
+  Don't forget to add your own Facebook and Twitter app ids.
+  Follow [this](https://developers.facebook.com/docs/android/login-with-facebook/v2.1) link to properly setup a Facebook app.
+  Follow [this](https://github.com/3pillarlabs/socialauth-android/wiki/Guide-Twitter) link to setup a Twitter app.
+
 ```android
 	private ButtonHandle handle;
 
