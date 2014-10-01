@@ -10,7 +10,9 @@ It provides a simple in use button that supports:
 - Rating the app directly on GooglePlay
 - Nice unobtrusive button animation
 
-![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")      ![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
+Screenshots from the test application(app module in this project)
+
+![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_1.png "Button")&nbsp;&nbsp;&nbsp;&nbsp;![](https://dl.dropboxusercontent.com/u/18433348/fantastic_btn_dlg.png "Sharing dialog")
 
 # How to use?
 
